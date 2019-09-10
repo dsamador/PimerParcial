@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mujerConAltoSueldo = 0, hombreConBajoSueldo = 0;
+        for (let i = 1; i <= 10; i++) {
+            nombre = prompt("Por favor digite nombre de empleado " + i);
+            sueldo = parseFloat(prompt("Por favor digite sueldo del empleado " + nombre))
+            sexo = parseInt(prompt("Por favor digite sexo del empleado " + nombre + " digite 1 para mujer y 2 para hombre"));
+            if(sexo === 1 && sueldo > 500)mujerConAltoSueldo++;
+            if(sexo === 2 && sueldo < 400)hombreConBajoSueldo++;            
+        }
+
+        console.log("Las mujeres que ganan más de 500 son " + mujerConAltoSueldo);
+        console.log("Los hombres que ganan menos de 400 son " + hombreConBajoSueldo);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var miArray = [];
+        var condicion = true;
+        alert("El programa ha comenzado. PARA DETENER PRESIONE 0");
+        var i = 0, a = 1;
+        var pares = 0, impares = 0;
+
+        while(condicion){
+             numero = parseInt(prompt("Digite número " + a));
+             if(numero === 0) break;
+             miArray[i] = numero;
+            if(miArray[i])
+            if(miArray[i] % 2 === 0){
+                pares++;
+            }else impares++;
+            i++;
+            a++;
+        }
+        alert("La cantidad de valores pares fueron " + pares);
+        alert("La cantidad de valores impares fueron " + impares);
+
+        console.log("La cantidad de valores pares fueron " + pares);
+        console.log("La cantidad de valores impares fueron " + impares);
+    </script>
+</body>
+</html>

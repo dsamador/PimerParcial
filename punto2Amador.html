@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let condicion = true;
+        var mayoresAOchenta = 0, menoresAOchenta = 0;
+        while(condicion){
+            let peso = parseFloat(prompt("Por favor digite su peso"));
+            if(peso > 80) mayoresAOchenta++;
+            else menoresAOchenta++;
+            let respuesta = parseInt(prompt("Digite cualquier tecla para continuar o cero(0) para terminar"));
+            if(respuesta === 0)
+            condicion = false;
+        }
+        console.log("La cantidad de pesos mayores a 80 es " + mayoresAOchenta);
+        console.log("La cantidad de pesos menores a 80 es " +menoresAOchenta);
+
+    </script>
+</body>
+</html>

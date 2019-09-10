@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var palabraConMasCaracteres = "";
+        var miArray = [];
+        var posArray = 0;        
+        for (let i = 1; i <= 4; i++) {
+            miArray[i] = prompt("Por favor digite palabra en posición " + i);            
+            palabraConMasCaracteres = miArray[i];
+            if(miArray[i].length > palabraConMasCaracteres.length){
+                palabraConMasCaracteres = miArray[i];                  
+                posArray = i;
+            }          
+        }
+        alert("Palabra con más caracteres es " + palabraConMasCaracteres);
+        alert("La cantidad de caracteres de " + palabraConMasCaracteres + " es " + palabraConMasCaracteres.length);
+        alert("El índice del vector es " + posArray);
+        console.log("El índice del vector es " + posArray);
+
+    </script>
+</body>
+</html>
